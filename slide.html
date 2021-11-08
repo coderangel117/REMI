@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <style>
+        #KeyFrameContent {
+            margin: 20px auto;
+            width: 150;
+            height: 150;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #sContent li {
+            display: block;
+            float: left;
+        }
+
+        #sContent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 450px;
+            margin: 0;
+            padding: 0;
+            /*CSS3 keyframes animation */
+            animation-name: AutoSlide;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            -webkit-animation-name: AutoSlide;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: ease-in;
+            -moz-animation-name: AutoSlide;
+            -moz-animation-duration: 5s;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-timing-function: ease-in;
+        }
+
+        #sContent:hover {
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+            animation-play-state: paused;
+        }
+
+        .dv1 {
+            background-color: #FFFFFF;
+            width: 150px;
+            height: 150px;
+        }
+
+        .dv2 {
+            background-color: #ffffcc;
+            width: 150px;
+            height: 150px;
+        }
+
+        .dv3 {
+            background-color: #ccdddd;
+            width: 150px;
+            height: 150px;
+        }
+
+        @keyframes AutoSlide {
+
+            0%,
+            33.333333333333% {
+                left: 0px
+            }
+
+            33.333333333333%,
+            66.666666666667% {
+                left: -150px
+            }
+
+            66.666666666667%,
+            100% {
+                left: -300px
+            }
+        }
+
+        @-webkit-keyframes AutoSlide {
+
+            0%,
+            33.333333333333% {
+                left: 0px
+            }
+
+            33.333333333333%,
+            66.666666666667% {
+                left: -150px
+            }
+
+            66.666666666667%,
+            100% {
+                left: -300px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="KeyFrameContent">
+        <ul id="sContent">
+            <li>
+                <div class='dv1'>Bonjour</div>
+            </li>
+            <li>
+                <div class='dv2'>Ca va?</div>
+            </li>
+            <li>
+                <div class='dv3'>Oui</div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
