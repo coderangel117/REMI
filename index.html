@@ -1,176 +1,215 @@
 <!doctype html>
 <html class="no-js" lang="">
 
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 
-        <meta name="theme-color" content="#fafafa">
-        <style>header{background: url(img/header.jpg) no-repeat center 0 #f4d143;
-               overflow: hidden;height: 194px;}
-            .bleuFonce{
-                color:#252161; 
-            }
-            .fondclair{background-color: #C0E7FA; border-radius: 10px;}
-            span{color:#ffff00;font-weight: 900;}
-            h2{color:#119EDA;}
-            #second{
+    <meta name="theme-color" content="#fafafa">
+    <style>
+        header {
+            background: url(img/header.jpg) no-repeat center 0 #f4d143;
+            overflow: hidden;
+            height: 194px;
+        }
+
+        .bleuFonce {
+            color: #252161;
+        }
+
+        .fondclair {
+            background-color: #C0E7FA;
+            border-radius: 10px;
+        }
+
+        span {
+            color: #ffff00;
+            font-weight: 900;
+        }
+
+        h2 {
+            color: #119EDA;
+        }
+
+        #second {
+            opacity: 0;
+        }
+
+        progress {
+            width: 100%;
+            color: blueviolet;
+        }
+
+        .fade-in {
+            opacity: 1;
+            animation-name: fadeInOpacity;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: 2s;
+
+        }
+
+        @keyframes fadeInOpacity {
+            0% {
                 opacity: 0;
             }
-            progress{
-                width:100%;
-                color:blueviolet;
+
+            100% {
+                opacity: 1;
             }
-            .fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
+        }
+    </style>
+</head>
 
-}
-
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-        </style>
-    </head>
-
-    <body>
-        <!--[if IE]>
+<body>
+    <!--[if IE]>
           <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
+    <!-- Add your site or application content here -->
 
-        <header>
+    <header>
 
-        </header>
+    </header>
 
-        <h1 class="bleuFonce">DEMANDE DE TRANSPORT SCOLAIRE - RÉMI 37
-        </h1>
-        <h2><span>></span> ANNÉE SCOLAIRE 2019/2020
-        </h2>
-        <hr class="bleuFonce" style="background-color: #252161; width:80%; text-align: center;"/>
-        <div class="container-fluid">
-            <form>Avancé
-                <progress value="33" max="100" id='progress'>33%</progress> 
-                <br/> <br/>
-                <article id="first">
-                    <div class="row" >
-                        <div  class="tailleApp col-lg-3 col-sm-12 col-md-4" ><img src="" id='ident' alt="Photo d’identité(indiquez le nom, le prénom et la date de naissance au dos)" class="img-thumbnail"></div>
-                        <div class="tailleApp col-lg-7 col-sm-12 col-md-8" >
-                            <div class="row fondclair" >
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input-inline" id="interne">
-                                    <label class="form-check-label" for="interne"> Élève interne </label>
-                                </div>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input-inline" id="externe">
-                                    <label class="form-check-label" for="externe"> Élève Élève demi-pensionnaire / Externe </label>
-                                </div>
+    <h1 class="bleuFonce">DEMANDE DE TRANSPORT SCOLAIRE - RÉMI 37
+    </h1>
+    <h2><span>></span> ANNÉE SCOLAIRE 2019/2020
+    </h2>
+    <hr class="bleuFonce" style="background-color: #252161; width:80%; text-align: center;" />
+    <div class="container-fluid">
+        <form>Avancé
+            <progress value="33" max="100" id='progress'>33%</progress>
+            <br /> <br />
+            <article id="first">
+                <div class="row">
+                    <div class="tailleApp col-lg-3 col-sm-12 col-md-4"><img src="" id='ident'
+                            alt="Photo d’identité(indiquez le nom, le prénom et la date de naissance au dos)"
+                            class="img-thumbnail">
+                    </div>
+                    <div class="tailleApp col-lg-7 col-sm-12 col-md-8">
+                        <div class="row fondclair">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input-inline" id="interne">
+                                <label class="form-check-label" for="interne"> Élève interne </label>
                             </div>
-                            <div class="row-fluid">
-                                <div class="row"> <h2><span>></span>Nature de la demande</h2></div>
-
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="transport">
-                                    <label class="form-check-label" for="transport"> Demande de transport</label>
-                                </div>
-
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="aide">
-                                    <label class="form-check-label" for="aide"> Demande d’aide individuelle
-                                        <br/> <i>(en cas d’absence de transport régional. Voir conditions dans la notice jointe. Joindre un RIB.)</i></label>
-                                </div>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="aide">
-                                    <label class="form-check-label" for="aide"> Changement de situation en cours d’année scolaire</label>
-                                </div>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="aide">
-                                    <label class="form-check-label" for="aide"> Duplicata <i>(demande à retourner à votre gestionnaire)</i></label>
-                                </div>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="aide">
-                                    <label class="form-check-label" for="aide"> Je possède une carte JVMalin, j’indique son numéro :
-
-                                    </label>
-                                </div>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="aide">
-                                    <label class="form-check-label" for="aide">Je ne possède pas de carte JVMalin (photo obligatoire)</label>
-                                </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input-inline" id="externe">
+                                <label class="form-check-label" for="externe"> Élève Élève demi-pensionnaire / Externe
+                                </label>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="row-fluid">
-                        <h2><span>></span>élève</h2>
-                        <div class="row">
-                            <div class="form-group form-check">
-                                <input type="radio" class="form-check-input-inline" value="f" name="genre" id="feminin" onclick="checkGenre();">
-                                    <label class="form-check-label" for="feminin">Féminin</label>
-                                </div>
-                                <div class="form-group form-check">
-                                    <input type="radio" class="form-check-input-inline" value="m" name="genre" id="masculin" onclick="checkGenre();">
-                                    <label class="form-check-label" for="masculin"> Masculin </label>
-                                </div></div>
-                    </div>
-                    <a href="#" onClick="suivant();" class="btn btn-info">Suivant</a>
-                </article>
-                <article id="second">
-                    <div class="row-fluid">
-                        <h2><span>></span>REPRÉSENTANT LÉGAL</h2>
-                        <i>(En cas de garde alternée, un formulaire par représentant légal doit être renseigné)
-                        </i>
-                        
-                            <div class="form-group">
-                                <label for="parenNom">Nom</label>
-                            <input type="text" name="parentNom" class="form-control" id="parentNom" placeholder="DUPONT"/>
+                        <div class="row-fluid">
+                            <div class="row">
+                                <h2><span>></span>Nature de la demande</h2>
                             </div>
-                             <div class="form-group">
-                           <label for="parenNom">Prenom</label>
-                            <input type="text" name="parentPrenom" class="form-control" placeholder="JEAN" id="parentPrenom"/>
-                             </div>
-                             <div class="form-group">
-                           <label for="parenTel">Telephone</label>
-                            <input type="tel" name="parentTel" class="form-control" id="parentTel" placeholder="06-13-22-32-12" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required/>
-                             </div>
-                             <div class="form-group">
-                            <label for="parenNom">Naissance</label>
-                            <input type="date" name="parentDate" class="form-control" id="parentDate"  />
-                             </div>
-                            <a href="#" onClick="majeur();" class="btn btn-info">Suivant</a>
-                    
+
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="transport">
+                                <label class="form-check-label" for="transport"> Demande de transport</label>
+                            </div>
+
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="aide">
+                                <label class="form-check-label" for="aide"> Demande d’aide individuelle
+                                    <br /> <i>(en cas d’absence de transport régional. Voir conditions dans la notice
+                                        jointe. Joindre un RIB.)</i></label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="aide">
+                                <label class="form-check-label" for="aide"> Changement de situation en cours d’année
+                                    scolaire</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="aide">
+                                <label class="form-check-label" for="aide"> Duplicata <i>(demande à retourner à votre
+                                        gestionnaire)</i></label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="aide">
+                                <label class="form-check-label" for="aide"> Je possède une carte JVMalin, j’indique son
+                                    numéro :
+
+                                </label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="aide">
+                                <label class="form-check-label" for="aide">Je ne possède pas de carte JVMalin (photo
+                                    obligatoire)</label>
+                            </div>
+                        </div>
                     </div>
-                </article>
-            </form>
-        </div>
-        <footer class="blue" id="presentation" style="font-family: 'Courier New', Courier, monospace;font-weight: bolder;">
 
-        </footer>
-        <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+                </div>
+                <div class="row-fluid">
+                    <h2><span>></span>élève</h2>
+                    <div class="row">
+                        <div class="form-group form-check">
+                            <input type="radio" class="form-check-input-inline" value="f" name="genre" id="feminin"
+                                onclick="checkGenre();">
+                            <label class="form-check-label" for="feminin">Féminin</label>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="radio" class="form-check-input-inline" value="m" name="genre" id="masculin"
+                                onclick="checkGenre();">
+                            <label class="form-check-label" for="masculin"> Masculin </label>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" onClick="suivant();" class="btn btn-info">Suivant</a>
+            </article>
+            <article id="second">
+                <div class="row-fluid">
+                    <h2><span>></span>REPRÉSENTANT LÉGAL</h2>
+                    <i>(En cas de garde alternée, un formulaire par représentant légal doit être renseigné)
+                    </i>
+
+                    <div class="form-group">
+                        <label for="parenNom">Nom</label>
+                        <input type="text" name="parentNom" class="form-control" id="parentNom" placeholder="DUPONT" />
+                    </div>
+                    <div class="form-group">
+                        <label for="parenNom">Prenom</label>
+                        <input type="text" name="parentPrenom" class="form-control" placeholder="JEAN"
+                            id="parentPrenom" />
+                    </div>
+                    <div class="form-group">
+                        <label for="parenTel">Telephone</label>
+                        <input type="tel" name="parentTel" class="form-control" id="parentTel"
+                            placeholder="06-13-22-32-12" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <label for="parenNom">Naissance</label>
+                        <input type="date" name="parentDate" class="form-control" id="parentDate" />
+                    </div>
+                    <a href="#" onClick="majeur();" class="btn btn-info">Suivant</a>
+
+                </div>
+            </article>
+        </form>
+    </div>
+    <footer class="blue" id="presentation" style="font-family: 'Courier New', Courier, monospace;font-weight: bolder;">
+
+    </footer>
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 
-    </body>
+</body>
 
 </html>
