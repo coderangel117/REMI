@@ -6,6 +6,8 @@ let aide1 = document.getElementById("aide1");
 let aide2 = document.getElementById("aide2");
 let aide3 = document.getElementById("aide3");
 let aide4 = document.getElementById("aide4");
+let first = document.getElementById("first");
+let finishButton = document.getElementById("finish");
 
 function suivantCondition() {
     if (!(transport.checked) && !(aide1.checked) && !(aide2.checked) && !(aide3.checked) && !(aide4.checked)
@@ -38,3 +40,19 @@ masculin.addEventListener("click", changeImgGender());
 
 // #119EDA pour les hommes 
 // #71BF45 pour les femmes.
+
+function alertClicked() { // to test if the button clicked
+    if (suivant.clicked == true) {
+        alert("your button was clicked !! ")
+    }
+}
+function clickCondition() { // if the button clicked, #second visible
+    if (!suivant.clicked) {
+        let second = document.getElementById("second");
+        second.style.opacity = 0;
+    } else {
+        second.style.opacity = 1;
+        first.style.opacity = 0;
+
+    }
+}
