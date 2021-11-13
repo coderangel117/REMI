@@ -56,3 +56,12 @@ function clickCondition() { // if the button clicked, #second visible
 
     }
 }
+
+suivant.addEventListener("click", alertClicked());
+
+function finishClicked() {
+    if (finishButton.clicked) {
+        alert("Fini !! ")
+    }
+}
+finishButton.addEventListener("click", finishClicked());
