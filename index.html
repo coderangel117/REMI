@@ -41,9 +41,9 @@
             color: #119EDA;
         }
 
-        #second {
+        /* #second {
             opacity: 0;
-        }
+        } */
 
         progress {
             width: 100%;
@@ -90,10 +90,8 @@
             <br /> <br />
     </header>
     <article id="first">
-
-
         <div class="row">
-            <div class="tailleApp col-lg-3 col-sm-12 col-md-4"><img src="img/header.jpg" id='ident' name=imgflag
+            <div class="tailleApp col-lg-3 col-sm-12 col-md-4"><img src="img/homme.png" id='ident' name=imgflag
                     alt="Photo d’identité(indiquez le nom, le prénom et la date de naissance au dos)"
                     class="img-thumbnail">
             </div>
@@ -122,23 +120,23 @@
                     </div>
 
                     <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="aide">
+                        <input type="checkbox" class="form-check-input" id="aide1">
                         <label class="form-check-label" for="aide"> Demande d’aide individuelle
                             <br /> <i>(en cas d’absence de transport régional. Voir conditions dans la notice
                                 jointe. Joindre un RIB.)</i></label>
                     </div>
                     <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="aide">
+                        <input type="checkbox" class="form-check-input" id="aide2">
                         <label class="form-check-label" for="aide"> Changement de situation en cours d’année
                             scolaire</label>
                     </div>
                     <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="aide">
+                        <input type="checkbox" class="form-check-input" id="aide3">
                         <label class="form-check-label" for="aide"> Duplicata <i>(demande à retourner à votre
                                 gestionnaire)</i></label>
                     </div>
                     <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="aide">
+                        <input type="checkbox" class="form-check-input" id="aide4">
                         <label class="form-check-label" for="aide"> Je possède une carte JVMalin, j’indique son
                             numéro :
 
@@ -168,15 +166,12 @@
                 </div>
             </div>
         </div>
-        <!-- <button id="test"  class="btn btn-info" >
-            Hello World
-        </button> -->
 
-        <button alt="bouton" id="suivant" class="btn btn-black">
+        <button alt="bouton" id="suivant" class="btn btn-black" onclick="alertClicked();" onclick="location.reload();">
             Suivant
         </button>
     </article>
-    <!-- <article id="second">
+     <article id="second">
         <div class="row-fluid">
             <h2 class="titre"><span>></span>REPRÉSENTANT LÉGAL</h2>
             <i>(En cas de garde alternée, un formulaire par représentant légal doit être renseigné)
@@ -184,11 +179,11 @@
 
             <div class="form-group">
                 <label for="parenNom">Nom</label>
-                <input type="text" name="parentNom" class="form-control" id="parentNom" placeholder="DUPONT" />
+                <input type="text" name="parentNom" class="form-control" id="parentNom" placeholder="DUPONT"  required/>
             </div>
             <div class="form-group">
                 <label for="parenNom">Prenom</label>
-                <input type="text" name="parentPrenom" class="form-control" placeholder="JEAN" id="parentPrenom" />
+                <input type="text" name="parentPrenom" class="form-control" placeholder="JEAN" id="parentPrenom" required />
             </div>
             <div class="form-group">
                 <label for="parenTel">Telephone</label>
@@ -197,13 +192,13 @@
             </div>
             <div class="form-group">
                 <label for="parenNom">Naissance</label>
-                <input type="date" name="parentDate" class="form-control" id="parentDate" />
+                <input type="date" name="parentDate" class="form-control" id="parentDate"  required/>
             </div>
-            <button disabled="disabled" class="btn btn-info">
-                <a href="#" onClick="majeur();">Suivant</a>
+            <button id="finish" class="btn btn-info">
+                termine
             </button>
         </div>
-    </article> -->
+    </article>
     </form>
     </div>
     <footer class="blue" id="presentation" style="font-family: 'Courier New', Courier, monospace;font-weight: bolder;">
