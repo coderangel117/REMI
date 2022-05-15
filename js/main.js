@@ -1,12 +1,8 @@
+let progressbar = document.getElementById("progress");
 let suivant = document.getElementById("suivant");
 let interne = document.getElementById("interne");
 let externe = document.getElementById("externe");
-let transport = document.getElementById("transport");
-let aide1 = document.getElementById("aide1");
-let aide2 = document.getElementById("aide2");
-let aide3 = document.getElementById("aide3");
-let aide4 = document.getElementById("aide4");
-let first = document.getElementById("first");
+let second = document.getElementById("second");
 let finishButton = document.getElementById("finish");
 suivant.addEventListener("click", function () {
     first.style.visibility = "hidden";
