@@ -5,28 +5,24 @@ let externe = document.getElementById("externe");
 let second = document.getElementById("second");
 let finishButton = document.getElementById("finish");
 suivant.addEventListener("click", function () {
-    first.style.visibility = "hidden";
-    second.style.visibility = "visible";
-    first.setAttribute('class', "disparu");
-    progressbar.setAttribute("value", "66");
-    });
+  first.style.visibility = "hidden";
+  second.style.visibility = "visible";
+  first.setAttribute('class', "disparu");
+  progressbar.setAttribute("value", "66");
+});
 feminin.addEventListener("click", changeImgGender());
 masculin.addEventListener("click", changeImgGender());
 
 function changeImgGender() {
-    let masculin = document.getElementById("masculin");
-    let feminin = document.getElementById("feminin");
-    if (feminin.checked) {
-
-        // let titre = document.querySelectorAll('h2, .titre').style.color("#71BF45");
-        var thechoice = document.getElementById('feminin').value
-        document.getElementById("ident").src = "img/" + thechoice + ".png";
-
-    } else {
-        var thechoice = document.getElementById('masculin').value
-        // var titre = document.querySelectorAll('h2, .titre');
-        document.getElementById("ident").src = "img/" + thechoice + ".png";
-    }
+  let masculin = document.getElementById("masculin");
+  let feminin = document.getElementById("feminin");
+  if (feminin.checked) {
+    let thechoice = feminin.value;
+    document.getElementById("ident").src = "img/" + thechoice + ".png";
+  } else {
+    let thechoice = masculin.value;
+    document.getElementById("ident").src = "img/" + thechoice + ".png";
+  }
 }
 feminin.addEventListener("click", changeImgGender());
 masculin.addEventListener("click", changeImgGender());
