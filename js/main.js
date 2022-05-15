@@ -8,17 +8,14 @@ let aide3 = document.getElementById("aide3");
 let aide4 = document.getElementById("aide4");
 let first = document.getElementById("first");
 let finishButton = document.getElementById("finish");
-
-function suivantCondition() {
-    if (!(transport.checked) && !(aide1.checked) && !(aide2.checked) && !(aide3.checked) && !(aide4.checked)
-    ) {
-        suivant.setAttribute("disabled", "disabled");
-    }
-    if ((transport.checked) || (aide1.checked) || (aide2.checked) || (aide3.checked) || (aide4.checked)) {
-        suivant.setAttribute("enabled", "enabled");
-    }
-}
-suivant.addEventListener("click", suivantCondition());
+suivant.addEventListener("click", function () {
+    first.style.visibility = "hidden";
+    second.style.visibility = "visible";
+    first.setAttribute('class', "disparu");
+    progressbar.setAttribute("value", "66");
+    });
+feminin.addEventListener("click", changeImgGender());
+masculin.addEventListener("click", changeImgGender());
 
 function changeImgGender() {
     let masculin = document.getElementById("masculin");
