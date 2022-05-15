@@ -24,33 +24,9 @@ function changeImgGender() {
     document.getElementById("ident").src = "img/" + thechoice + ".png";
   }
 }
-feminin.addEventListener("click", changeImgGender());
-masculin.addEventListener("click", changeImgGender());
 
-// #119EDA pour les hommes 
+finishButton.addEventListener("click", function () {
+  alert('Nous avons le plaisir de vous annoncer que votre demande a bien été prise en compte');
+});
+// #119EDA pour les hommes
 // #71BF45 pour les femmes.
-
-function alertClicked() { // to test if the button clicked
-    if (suivant.clicked == true) {
-        alert("your button was clicked !! ")
-    }
-}
-function clickCondition() { // if the button clicked, #second visible
-    if (!suivant.clicked) {
-        let second = document.getElementById("second");
-        second.style.opacity = 0;
-    } else {
-        second.style.opacity = 1;
-        first.style.opacity = 0;
-
-    }
-}
-
-suivant.addEventListener("click", alertClicked());
-
-function finishClicked() {
-    if (finishButton.clicked) {
-        alert("Fini !! ")
-    }
-}
-finishButton.addEventListener("click", finishClicked());
